@@ -32,17 +32,14 @@ const sharder = new Sharder(Discord, __dirname + "/client.js", {
         ]
     },
     aquaOptions: {
-        commandPrefix: 'kuro',
-        owner: '254950404050255872',
+        commandPrefix: 'kuro', // Kuroneko#5118 best bot.
+        master: 'your id', //or an array of ids
         unknownCommandResponse: false,
-        apostle: [
-            '679588706612805632',
-            '386714563325853697',
-            '462208987518205952'
-        ]
+        staff: 'staff id' // or an array of ids
+
     }
 });
 
 sharder.on("stats", stats => {
     console.log(stats);
-  });
+});
