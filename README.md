@@ -9,7 +9,7 @@ A command handler built on top of Eris inspired by discord.js-commando.
 
 
 
-const Aqua = require('this repo')
+const Aqua = require('aqua-client')
 const fs = require('fs')
 const sqlite3 = require("sqlite3");
 const { open } = require("sqlite");
@@ -55,7 +55,7 @@ client.connect()
 This repo did not work with `eris-sharder` and thus, I tweaked it a bit to work. Along with the default options, I added a new `aquaOptions` option which can be modified for use with the AquaClient.
 
 ```javascript
-const { Secretary } = require('this repo')
+const { Secretary } = require('aqua-client')
  
 new Secretary.Sharder(Discord, __dirname + "/client.js", {
     stats: true,
