@@ -75,3 +75,4 @@ new Secretary.Sharder(Discord, __dirname + "/client.js", {
 });
 
 ```
+This will be removed in case `eris-sharder` works with this package in the future.
