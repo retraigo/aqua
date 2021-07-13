@@ -1,6 +1,6 @@
 {
   "name": "aqua-client",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A command handler built on top of Eris inspired by discord.js-commando.",
   "main": "index.js",
   "scripts": {
