@@ -171,6 +171,7 @@ class AquaRegistry {
 				command instanceof Command || command.default instanceof Command;
 			if(ignoreInvalid && !valid) {
 				this.client.emit('warn', `Attempting to register an invalid command object: ${(command && command !== null) ? command.name : "undefined"}, ${command}; skipping.`);
+				this.client.emit('invalidCommand', command)
 				continue;
 			}
 			this.registerCommand(command);
